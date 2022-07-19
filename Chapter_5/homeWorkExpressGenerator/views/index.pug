@@ -1,0 +1,44 @@
+html
+head
+    title #{title}
+    meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css", rel="stylesheet")
+body
+    div.container
+        .card(style = "margin-top: 5%;")
+            h3.card-header Registration Form
+            .card-body
+                form(action="/user-info", method="post", enctype="application/x-www-form-urlencoded")
+                    .form-group
+                        .row 
+                            .col 
+                                label(for="fname") First Name
+                                input.form-control(type="text", name="fname", placeholder="Johnny", required)
+                            .col 
+                                label(for="lname") Last Name
+                                input.form-control(type="text", name="lname", placeholder="Nelson", required)
+                    .form-group
+                        .row 
+                            .col
+                                label(for="birthday") Birthday
+                                input.form-control(type="number", name="birthday", placeholder="1994", required)
+                            .col 
+                                .row
+                                    label(for="gender") Gender 
+                                .row
+                                    .col
+                                        input.form-check-input(type="radio", name="gender", id="male" value="Male", required)
+                                        label.form-check-label(for="male") Male
+                                    .col
+                                        input.form-check-input(type="radio", name="gender", id="female" value="Female", required)
+                                        label.form-check-label(for="female") Female
+                    .form-group
+                        .row 
+                            .col 
+                                label(for="email") Email
+                                input.form-control(type="text", name="email", placeholder="abcd@gmail.com", required)
+                            .col 
+                                label(for="phone") Phone Number
+                                input.form-control(type="text", name="phone", placeholder="0346199449", required)
+                    button.btn.btn-block.btn-success(type="submit") Submit
+                    p(style="color:red") #{error}

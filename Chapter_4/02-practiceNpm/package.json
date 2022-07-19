@@ -1,0 +1,14 @@
+{
+  "name": "02-practicenpm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nguyen Van Thien",
+  "license": "ISC",
+  "dependencies": {
+    "@sineverba/date-convert": "^1.3.0"
+  }
+}
