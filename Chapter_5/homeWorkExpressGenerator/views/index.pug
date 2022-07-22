@@ -13,32 +13,32 @@ body
                         .row 
                             .col 
                                 label(for="fname") First Name
-                                input.form-control(type="text", name="fname", placeholder="Johnny", required)
+                                input.form-control(type="text", name="fname", placeholder="Johnny")
                             .col 
                                 label(for="lname") Last Name
-                                input.form-control(type="text", name="lname", placeholder="Nelson", required)
+                                input.form-control(type="text", name="lname", placeholder="Nelson")
                     .form-group
                         .row 
                             .col
                                 label(for="birthday") Birthday
-                                input.form-control(type="number", name="birthday", placeholder="1994", required)
+                                input.form-control(type="number", name="birthday", placeholder="1994")
                             .col 
                                 .row
                                     label(for="gender") Gender 
                                 .row
                                     .col
-                                        input.form-check-input(type="radio", name="gender", id="male" value="Male", required)
+                                        input.form-check-input(type="radio", name="gender", id="male" value="Male")
                                         label.form-check-label(for="male") Male
                                     .col
-                                        input.form-check-input(type="radio", name="gender", id="female" value="Female", required)
+                                        input.form-check-input(type="radio", name="gender", id="female" value="Female")
                                         label.form-check-label(for="female") Female
                     .form-group
                         .row 
                             .col 
                                 label(for="email") Email
-                                input.form-control(type="text", name="email", placeholder="abcd@gmail.com", required)
+                                input.form-control(type="text", name="email", placeholder="abcd@gmail.com")
                             .col 
                                 label(for="phone") Phone Number
-                                input.form-control(type="text", name="phone", placeholder="0346199449", required)
+                                input.form-control(type="text", name="phone", placeholder="0346199449")
                     button.btn.btn-block.btn-success(type="submit") Submit
                     p(style="color:red") #{error}
