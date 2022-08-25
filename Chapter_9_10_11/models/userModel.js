@@ -8,7 +8,7 @@ const userSchema = mongoose.Schema({
   isAdmin: { type: Boolean, required: true, default: false },
 });
 
-userSchema.pre("save", async (next) => {
+userSchema.pre("save", async function (next) {
   //Mã hoá password trước khi lưu user vào database
   //Check xem password có được sửa hay không
   if (!this.isModified("password")) return next();
