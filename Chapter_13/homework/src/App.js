@@ -5,23 +5,25 @@ import students from "./students.json";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { listStudents: students };
+    this.state = { listStudents: students, showListStudent: true };
   }
 
   handleDelete = () => {
-    this.setState({ listStudents: [] });
+    this.setState({ listStudents: [], showListStudent: false });
   };
-
+  handleReturnListStudent = () => {
+    this.setState({ listStudents: students, showListStudent: true });
+  };
+  s;
   render() {
     return (
       <div>
         <h2>DANH SÁCH HỌC SINH</h2>
         <button onClick={this.handleDelete}>Xoá toàn bộ học sinh</button>
-        {this.state.listStudents.length === 0 ? (
-          <p style={{ color: "red" }}>
-            <b>Danh sách lớp trống</b>
-          </p>
-        ) : (
+        <button onClick={this.handleReturnListStudent}>
+          Hiển thị danh sách học sinh
+        </button>
+        {this.state.showListStudent ? (
           this.state.listStudents.map((e, i) => {
             return (
               <Student
@@ -35,6 +37,10 @@ class App extends Component {
               />
             );
           })
+        ) : (
+          <p style={{ color: "red" }}>
+            <b>Danh sách lớp trống</b>
+          </p>
         )}
       </div>
     );
