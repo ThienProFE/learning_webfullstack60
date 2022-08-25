@@ -1,0 +1,47 @@
+[
+    {
+      "id": 1,
+      "name": "Thiện",
+      "age": 28,
+      "birth": "10/01/1994",
+      "avatar":
+        "https://icdn.dantri.com.vn/thumb_w/640/2017/1-1510967806416.jpg",
+      "address": "Hải Dương"
+    },
+    {
+      "id": 2,
+      "name": "Huệ",
+      "age": 26,
+      "birth": "25/05/1996",
+      "avatar":
+        "https://didongviet.vn/dchannel/wp-content/uploads/2022/01/cute-didongviet.jpg",
+      "address": "Thái Bình"
+    },
+    {
+        "id": 3,
+        "name": "Min",
+        "age": 28,
+        "birth": "10/01/1994",
+        "avatar":
+          "https://icdn.dantri.com.vn/thumb_w/640/2017/1-1510967806416.jpg",
+        "address": "Hải Dương"
+      },
+      {
+        "id": 4,
+        "name": "Mít",
+        "age": 28,
+        "birth": "10/01/1994",
+        "avatar":
+          "https://icdn.dantri.com.vn/thumb_w/640/2017/1-1510967806416.jpg",
+        "address": "Hải Dương"
+      },
+      {
+        "id": 5,
+        "name": "Mon",
+        "age": 28,
+        "birth": "10/01/1994",
+        "avatar":
+          "https://icdn.dantri.com.vn/thumb_w/640/2017/1-1510967806416.jpg",
+        "address": "Hải Dương"
+      }
+  ]
