@@ -3,7 +3,7 @@ import { Form, Input, Button, Radio } from "antd";
 import { useInput } from "./hooks";
 
 const SubmitStudent = ({ onAddStudent }) => {
-  const id = useInput();
+  const id = Math.floor(Math.random() * 1000);
   const name = useInput();
   const age = useInput();
   const gender = useInput();
@@ -26,13 +26,13 @@ const SubmitStudent = ({ onAddStudent }) => {
   return (
     <>
       <Form {...layout} name="nest-messages">
-        <Form.Item
+        {/* <Form.Item
           name="Số thứ tự"
           label="Số thứ tự"
           rules={[{ required: true }]}
         >
           <Input value={id.value} onChange={id.onChange} />
-        </Form.Item>
+        </Form.Item> */}
         <Form.Item
           name="Họ và tên"
           label="Họ và tên"

@@ -25,9 +25,9 @@ const App = () => {
     },
   ]);
   const handleSubmitStudent = (student) => {
-    const id = student.id.value;
-    const name = student.id.value;
-    const age = student.id.value;
+    const id = student.id;
+    const name = student.name.value;
+    const age = student.age.value;
     const address = student.address.value;
     const gender = student.gender.value;
     const phone = student.phone.value;

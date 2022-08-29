@@ -64,7 +64,7 @@ const Student = (students) => {
     <>
       <Table
         columns={columns}
-        dataSource={[students]}
+        dataSource={[{ ...students }]}
         scroll={{ x: 200, y: 200 }}
       />
     </>
