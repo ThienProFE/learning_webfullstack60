@@ -4,7 +4,6 @@ import { DeleteOutlined } from "@ant-design/icons";
 
 const Student = (students) => {
   const { id, onDelete } = students;
-  console.log([students]);
   const handleGetIdDelete = () => {
     onDelete(id);
   };
