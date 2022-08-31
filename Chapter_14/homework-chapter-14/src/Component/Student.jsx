@@ -4,6 +4,7 @@ import { DeleteOutlined } from "@ant-design/icons";
 
 const Student = (students) => {
   const { id, onDelete } = students;
+  console.log([students]);
   const handleGetIdDelete = () => {
     onDelete(id);
   };
@@ -64,8 +65,9 @@ const Student = (students) => {
     <>
       <Table
         columns={columns}
-        dataSource={[{ ...students }]}
-        scroll={{ x: 200, y: 200 }}
+        dataSource={[students]}
+        rowKey={"name"}
+        // scroll={{ x: 200, y: 200 }}
       />
     </>
   );
