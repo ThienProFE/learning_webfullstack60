@@ -63,21 +63,7 @@ const App = () => {
         }}
         onChange={(e) => searchMember(e.target.value)}
       />
-      {listStudent.map((e, i) => {
-        return (
-          <Student
-            key={i}
-            id={e.id}
-            name={e.name}
-            age={e.age}
-            gender={e.gender}
-            address={e.address}
-            phone={e.phone}
-            introduction={e.introduction}
-            onDelete={handleDeleteStudent}
-          />
-        );
-      })}
+      <Student onDelete={handleDeleteStudent} info={listStudent} />
     </div>
   );
 };

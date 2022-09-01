@@ -2,10 +2,11 @@ import React from "react";
 import { Button, Table } from "antd";
 import { DeleteOutlined } from "@ant-design/icons";
 
-const Student = (students) => {
-  const { id, onDelete } = students;
+const Student = ({ onDelete, info }) => {
   const handleGetIdDelete = () => {
-    onDelete(id);
+    for (let i = 0; i < info.length; i++) {
+      onDelete(info[i].id);
+    }
   };
 
   // Table for students
@@ -62,12 +63,7 @@ const Student = (students) => {
 
   return (
     <>
-      <Table
-        columns={columns}
-        dataSource={[students]}
-        rowKey={"name"}
-        // scroll={{ x: 200, y: 200 }}
-      />
+      <Table columns={columns} dataSource={info} rowKey={"name"} />
     </>
   );
 };
