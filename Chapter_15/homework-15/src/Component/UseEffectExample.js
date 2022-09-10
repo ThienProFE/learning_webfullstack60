@@ -13,6 +13,11 @@ const UseEffectExample = () => {
     setTimeIncrease(false);
   };
 
+  const handleReset = () => {
+    setTime(0);
+    setTimeIncrease(false);
+  };
+
   useEffect(() => {
     if (timeIncrease) {
       const timeInterval = setInterval(() => setTime(time + 1), 1000);
@@ -51,7 +56,7 @@ const UseEffectExample = () => {
         ghost
         shape="round"
         size={"large"}
-        onClick={() => setTime(0)}
+        onClick={handleReset}
       >
         Reset
       </Button>

@@ -44,7 +44,7 @@ const TableUser = () => {
   const [userList, setUserList] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  const callAPI = async (params = {}) => {
+  const callAPI = async () => {
     const response = await axios({
       method: "get",
       url: "https://randomuser.me/api?results=100",
@@ -60,10 +60,6 @@ const TableUser = () => {
     callAPI();
   }, []);
 
-  // const handleTableChange = (filters, sorter) => {
-
-  // };
-
   return (
     <>
       <h2>Danh sách học sinh trong lớp</h2>
@@ -72,7 +68,6 @@ const TableUser = () => {
         dataSource={userList}
         rowKey={"email"}
         loading={isLoading}
-        // onChange={handleTableChange}
       />
     </>
   );

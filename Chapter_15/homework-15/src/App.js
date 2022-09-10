@@ -1,11 +1,11 @@
 import React from "react";
-// import UseEffectExample from "./Component/UseEffectExample";
+import UseEffectExample from "./Component/UseEffectExample";
 import TableUser from "./Component/TableUser";
 
 const App = () => {
   return (
     <div>
-      {/* <UseEffectExample /> */}
+      <UseEffectExample />
       <TableUser />
     </div>
   );
